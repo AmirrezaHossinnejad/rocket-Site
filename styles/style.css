@@ -1,0 +1,249 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: rgb(48, 66, 84);
+  font-family: "Estedad Medium", serif;
+}
+
+header {
+  grid-column: 1/5;
+  margin: 5vh auto;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  margin: 0 auto;
+}
+
+input[type=search] {
+  background-color: #1B314C;
+  border: none;
+  width: 30vw;
+  padding: 15px;
+  border-radius: 10px;
+  color: aliceblue;
+  margin: 0 auto;
+  font-family: "Estedad Medium", serif;
+}
+
+nav {
+  background-color: #0B233E;
+  width: 55vw;
+  margin: 0 auto;
+  padding: 5px 15px;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  display: flex;
+  justify-content: center;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+nav ul > li {
+  padding: 0.6vw;
+  font-size: 1em;
+}
+nav ul li {
+  color: white;
+  cursor: pointer;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+nav ul li:hover span {
+  cursor: pointer;
+}
+nav ul ul {
+  display: none;
+}
+nav ul ul li {
+  padding: 10px;
+}
+nav ul ul li:hover {
+  background-color: #1B314C;
+  border-radius: 6px;
+}
+nav ul ul li a {
+  display: block;
+}
+nav ul ul li span {
+  font-size: 12px;
+  width: 1vw;
+  color: #ababab;
+}
+
+.menu {
+  background-color: #0E2338;
+  border-radius: 1rem;
+  width: 60vw;
+  display: flex;
+  align-items: center;
+  padding: 35px 30px;
+}
+.menu__button {
+  display: flex;
+  justify-content: space-between;
+  width: 13vw;
+}
+.menu__button button {
+  width: 1vw;
+  height: 1vw;
+  border-radius: 100000%;
+  border: none;
+  background-color: #263756;
+  padding: 25px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.menu__button button i {
+  align-items: center;
+  font-size: 2em;
+  color: #C2C6CC;
+}
+
+.nav__options {
+  position: relative;
+}
+
+.nav__down__course {
+  position: absolute;
+}
+
+.nav__dropDown__course {
+  grid-template-columns: auto auto;
+  position: absolute;
+  background-color: #0B233E;
+  padding: 10px;
+}
+
+.nav__dropDown__course {
+  top: 9vh;
+  border-radius: 8px;
+}
+.nav__dropDown__course li {
+  width: 7vw;
+}
+
+.nav__dropDown__links {
+  position: absolute;
+  background-color: #0B233E;
+  border-radius: 8px;
+  top: 9vh;
+}
+.nav__dropDown__links li {
+  width: 8vw;
+}
+
+main {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column: 4/5;
+  grid-gap: 2vw;
+  margin: 5vw auto;
+}
+main h2 {
+  font-size: 3em;
+  color: white;
+  font-family: "Estedad Bold", serif;
+}
+main p {
+  font-size: 1.5em;
+  color: #afafaf;
+}
+main > a {
+  color: #fff;
+  text-decoration: none;
+  background-color: rgb(59, 130, 246);
+  grid-row: 2;
+  width: 13vw;
+  text-align: center;
+  padding: 1vw 0;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+main > a:hover {
+  background-color: #606060;
+  transition: 0.2s;
+}
+main > a span {
+  font-size: 1em;
+}
+main ul {
+  display: grid;
+  grid-template-columns: 13vw 13vw;
+  grid-row: 3;
+  grid-column: 1;
+}
+main ul li {
+  list-style-type: none;
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: "Estedad Bold", serif;
+  font-size: 1.5em;
+  color: white;
+}
+main section {
+  display: grid;
+  grid-row: 4;
+  margin-top: 20vh;
+  font-size: 12px;
+}
+main section > div {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 5vw;
+  margin-top: 10vw;
+  color: white;
+}
+main section > div div {
+  padding: 17vh 1vw 0 1vw;
+  width: 14vw;
+  background-color: #1b344c;
+  position: relative;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+main section > div div img {
+  width: 14vw;
+  position: absolute;
+  background-size: cover;
+  border-radius: 10px;
+  right: 1vw;
+  top: -5vh;
+  transition: 0.2s;
+}
+main section > div div img:hover {
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+main section > div div li {
+  color: rgb(0, 98, 255);
+}
+main section > div div h3 {
+  font-size: 1.5em;
+  color: white;
+}
+main section > div div p {
+  font-size: 1em;
+  margin: 1vw 0;
+}
+main section > div div a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  color: rgba(21, 94, 255, 0.98);
+  margin: 2vh 0;
+}
+main section > div hr {
+  margin: 2vh 0;
+}
+
+/*# sourceMappingURL=style.css.map */
